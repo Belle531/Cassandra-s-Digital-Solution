@@ -1,0 +1,14 @@
+/* Tailwind Directives */
+@import "tailwindcss";
+
+/* Minimal Global Resets */
+body  {
+  border: 1px solid red;
+}
+
+
+/* Ensure the React root element spans the full width and height */
+#root {
+  width: 100%;
+  min-height: 100vh;
+}
