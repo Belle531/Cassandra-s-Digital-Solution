@@ -6,7 +6,10 @@
   "scripts": {
     "dev": "vite",
     "build": "vite build",
-    "preview": "vite preview"
+    "deploy": "aws s3 sync dist/ s3://my-s3-app-cassandra --delete",
+     "lint": "eslint .",
+    "preview": "vite preview",
+    "tailwind-init": "tailwindcss init -p" 
   },
   "dependencies": {
     "@tailwindcss/postcss": "^4.1.16",
