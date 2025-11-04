@@ -6,4 +6,7 @@ import tailwindcss from '@tailwindcss/vite'
 export default defineConfig({
   plugins: [react(), tailwindcss()],
   base: '/', // <-- This is the crucial line for static hosting!
+  build: {
+    outDir: 'my-s3-app-cassandra', // Output directory for S3 bucket
+  }
 })
