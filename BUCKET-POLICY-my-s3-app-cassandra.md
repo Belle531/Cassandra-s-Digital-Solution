@@ -92,7 +92,7 @@ Take a screenshot of your React todo app running from the S3 URL in an incognito
             "Resource": "arn:aws:s3:::my-s3-app-cassandra/*",
             "Condition": {
                 "StringEquals": {
-                    "AWS:SourceArn": "arn:aws:cloudfront::959975881533:distribution/EIOJPD2Q83G37"
+                    "AWS:SourceArn": "arn:aws:cloudfront::959975881533:distribution/E3I2LKGEJL9XB0"
                 }
             }
         }

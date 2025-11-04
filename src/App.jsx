@@ -51,7 +51,7 @@ function App() {
         {/* 2. RESPONSIVE Todo List Card */}
         <div className="bg-white rounded-2xl shadow-2xl p-6 w-full max-w-xs sm:max-w-md md:max-w-lg transition-all duration-300 border border-gray-100">
           <h2 className="text-xl font-bold text-slate-800 mb-4 text-center border-b pb-2 border-gray-100">
-            Task Management System
+            Cassandra's Digital Task Manager
           </h2>
 
           {/* Add Todo Form */}

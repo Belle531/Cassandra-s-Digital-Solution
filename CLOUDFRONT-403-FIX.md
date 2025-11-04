@@ -1,7 +1,7 @@
 # CloudFront 403 Error - Troubleshooting Guide
 
 ## 🚨 Current Issue
-**CloudFront URL**: `d3csfiydbi6yey.cloudfront.net`  
+**CloudFront URL**: `d1jfmo2m6e6dxl.cloudfront.net`  
 **Error**: 403 Forbidden - Failed to load resource
 
 ## ✅ **Quick Fix: Use Direct S3 URL**
@@ -27,6 +27,7 @@ This should work immediately since your S3 bucket is properly configured.
    **NOT**: `my-s3-app-cassandra.s3.amazonaws.com`
 
 ### **Step 2: Check Origin Access Control (OAC)**
+
 - If using OAC, you need additional S3 bucket policy
 - **Easier**: Use S3 website endpoint as origin (no OAC needed)
 
