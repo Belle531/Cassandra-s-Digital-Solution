@@ -75,3 +75,26 @@ After completing the steps above, your website will be available at one of these
 
 ## 📸 Deliverable: Screenshot
 Take a screenshot of your React todo app running from the S3 URL in an incognito browser window to prove it works without AWS credentials.
+
+## CloudFront Bucket Code Distribution
+
+{
+    "Version": "2008-10-17",
+    "Id": "PolicyForCloudFrontPrivateContent",
+    "Statement": [
+        {
+            "Sid": "AllowCloudFrontServicePrincipal",
+            "Effect": "Allow",
+            "Principal": {
+                "Service": "cloudfront.amazonaws.com"
+            },
+            "Action": "s3:GetObject",
+            "Resource": "arn:aws:s3:::my-s3-app-cassandra/*",
+            "Condition": {
+                "StringEquals": {
+                    "AWS:SourceArn": "arn:aws:cloudfront::959975881533:distribution/EIOJPD2Q83G37"
+                }
+            }
+        }
+    ]
+}
